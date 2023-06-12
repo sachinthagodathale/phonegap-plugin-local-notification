@@ -89,7 +89,7 @@ public class LocalNotifications extends CordovaPlugin {
 
         // Build notifications
         NotificationCompat.Builder mBuilder =
-                new NotificationCompat.Builder(context,channelId)
+                new NotificationCompat.Builder(context)
                         .setWhen(System.currentTimeMillis())
                         .setContentTitle(title)
                         .setContentText(body)
