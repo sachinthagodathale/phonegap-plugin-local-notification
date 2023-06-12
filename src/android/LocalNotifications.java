@@ -15,7 +15,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.support.v4.app.NotificationCompat;
+import android.support.v4.media.app.NotificationCompat;
 import android.util.Log;
 
 import java.io.IOException;
@@ -89,7 +89,7 @@ public class LocalNotifications extends CordovaPlugin {
 
         // Build notifications
         NotificationCompat.Builder mBuilder =
-                new NotificationCompat.Builder(context)
+                new NotificationCompat.Builder(context,channelId)
                         .setWhen(System.currentTimeMillis())
                         .setContentTitle(title)
                         .setContentText(body)
